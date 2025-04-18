@@ -7,8 +7,8 @@ This Python application automates the process of finding cheap flights. It reads
 ## How It Works
 
 1.  **Google Sheet Input:** You maintain a Google Sheet with a list of destinations you want to visit and your maximum acceptable price for flights to those destinations.
-2.  **Data Retrieval:** The script uses the Sheety API (or the Google Sheets API) to fetch this destination data.
-3.  **Flight Search:** For each destination, the script queries a flight search API (Kiwi.com) to find the cheapest flights within the next 6 months.
+2.  **Data Retrieval:** The script fetches this destination data using the Sheety API (or the Google Sheets API).
+3.  **Flight Search:** The script queries a flight search API (Kiwi.com) for each destination to find the cheapest flights within the next 6 months.
 4.  **Price Comparison:** The script compares the cheapest flight price with your price cutoff from the Google Sheet.
 5.  **SMS Alerts:** If a flight is found that's cheaper than your cutoff, the script sends you an SMS notification with the flight details using the Twilio API.
 
